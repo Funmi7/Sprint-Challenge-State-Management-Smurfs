@@ -6,7 +6,7 @@ import {connect} from 'react-redux';
 import * as actionCreators from '../state/actionCreators';
 
 export function App (props) {
-  const {getSmurfsData, smurfs, addSmurfData, initialSmurfForm, onSubmit} = props;
+  const {getSmurfsData, smurfs} = props;
   useEffect(() => {
     getSmurfsData();
   }, [])
@@ -15,7 +15,6 @@ export function App (props) {
       <div className="App">
         <h1>SMURFS! 2.0 W/ Redux</h1>
         <SmurfsList smurfs={smurfs}/>
-        {/* <SmurfForm initialSmurfForm={initialSmurfForm} */}
         <SmurfForm />
       </div>
     );

@@ -5,7 +5,7 @@ export default function SmurfsCard(props) {
 
     return (
         <div>
-           <p>{name}</p> 
+            <p>{name}</p> 
             <p>{age}</p>
             <p>{height}</p>
         </div>
