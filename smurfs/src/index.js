@@ -10,6 +10,7 @@ import * as reducers from './state/reducers';
 
 const singleReducer = combineReducers({
     smurfs: reducers.smurfsReducers,
+    // addSmurf: reducers.postReducers
  });
  
  const store = createStore(

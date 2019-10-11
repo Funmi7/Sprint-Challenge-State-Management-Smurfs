@@ -4,11 +4,7 @@ import * as actionCreators from '../state/actionCreators';
 import {connect} from 'react-redux';
 
 export const SmurfsList = props => {
-    const {getSmurfsData, smurfs} = props;
-
-    useEffect(() => {
-        getSmurfsData();
-    }, [])
+    const {smurfs} = props;
 
     return (
         smurfs.map(smurf => {
